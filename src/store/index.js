@@ -1,6 +1,6 @@
 // @flow 
 import { createStore, applyMiddleware } from 'redux';
-import {initialState, combineReducers } from "../redux-utility/registery";
+import combineReducers, {initialState } from "../redux-utility/registery";
 import type { RootState } from "../redux-utility/registery";
 import {sequence} from "../redux-utility/sequence";
 

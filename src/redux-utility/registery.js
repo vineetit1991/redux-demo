@@ -81,6 +81,23 @@ export default combineReducers({
 });
 
 
+export const initialState = ((o: typeof reducers) => {
+    let rootState = {}
+    Object.keys(o).forEach(reducerName => {
+        const state = o[reducerName].reducer(undefined, { type: "" }, {});    
+        rootState = { ...rootState,  [reducerName]: state };
+    });
+    return rootState;
+})({
+    workspace: workspace,
+    savePublish: savePublish,
+    components: components,
+    componentsPanel: componentsPanel,
+    mcta: mcta,
+    propertyPanel: propertyPanel
+});
+
+
 // // ReducerConfigurations
 // export const reducers = {
 //     workspace: workspace.reducer,
