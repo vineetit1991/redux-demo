@@ -1,0 +1,16 @@
+* {
+    outline: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.app, #root, html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.bodyContainer {
+    width: 100%;
+    height: calc(100% - 45px);
+    display: inline-flex; 
+}

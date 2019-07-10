@@ -1,0 +1,118 @@
+.wrapperDragging {
+    border: 1px dashed blue;
+}
+
+.wrapperDragging > div {
+    opacity: 0;
+}
+
+.wrapperSelected div[class*='dragHandle'] {
+    pointer-events: auto;
+    z-index: 1000;
+}
+
+.dragHandleWrapper {
+    /* position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    cursor: grab;
+    margin: auto; */
+    /* position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 90%;
+    height: 80%; */
+    /* pointer-events: all; */
+    /* cursor: grab; */
+}
+
+.dragHandle-topLeft {
+    border: 2px solid blue;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    left: -3px;
+    position: absolute;
+    top: -3px;
+    cursor: nwse-resize;
+}
+
+.dragHandle-top {
+    cursor: n-resize;
+    border: 2px solid blue;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    left: calc(50% - 6px);
+    position: absolute;
+    top: -3px;
+    cursor: ns-resize;
+}
+
+.dragHandle-topRight {
+    border: 2px solid blue;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    right: -3px;
+    position: absolute;
+    top: -3px;
+    cursor: nesw-resize;
+}
+
+.dragHandle-left {
+    border: 2px solid blue;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    left: -3px;
+    position: absolute;
+    top: calc(50% - 6px);
+    cursor: ew-resize;
+}
+
+.dragHandle-right {
+    border: 2px solid blue;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    right: -3px;
+    position: absolute;
+    top: calc(50% - 6px);
+    cursor: ew-resize;
+}
+
+.dragHandle-bottomLeft {
+    border: 2px solid blue;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    left: -3px;
+    position: absolute;
+    bottom: -3px;
+    cursor: nesw-resize;
+}
+
+.dragHandle-bottomRight {
+    border: 2px solid blue;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    right: -3px;
+    position: absolute;
+    bottom: -3px;
+    cursor: nwse-resize;
+}
+
+.dragHandle-bottom {
+    border: 2px solid blue;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    right: calc(50% - 6px);
+    position: absolute;
+    bottom: -3%;
+    cursor: ns-resize;
+}

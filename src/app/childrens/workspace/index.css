@@ -1,0 +1,53 @@
+.workspaceParent {
+    width: calc(100% - 200px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: scroll;
+}
+
+.workspaceParent .workspace { 
+    border-left: 1px dashed #00800063;
+    border-right: 1px dashed #00800063;
+    position: relative;
+}
+
+.button {
+    background: #00800045;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.componentWrapper {
+    box-sizing: border-box;
+}
+
+.placeholderElement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    cursor: pointer;
+    user-select: none;
+}
+.leftBar {
+    position: absolute;
+    left: -4px;
+    height: 100%;
+    border: 2px solid coral;
+    /* cursor: col-resize; */
+}
+
+.rightBar {
+    position: absolute;
+    right: -4px;
+    height: 100%;
+    border: 2px solid coral;
+    /* cursor: col-resize; */
+}

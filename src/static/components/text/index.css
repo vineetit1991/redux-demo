@@ -1,0 +1,56 @@
+.wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.button1 {
+    background: none;
+    background-color: #F9F9F9;
+    height: 32px;
+    padding: 10px 13px;
+    border-radius: 3px;
+    color: #262626;
+    border: 1px solid #CDCDCD;
+    box-shadow: 0 0 17px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    margin-top: 4px;
+    right: 19px;
+    align-items: center;
+    margin-left: 9px;
+}
+
+.textarea {
+    width: 100%;
+    border: 1px solid #bcb6b6;
+    position: absolute;
+}
+
+.textNonEdit {
+    word-break: break-word;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    overflow: visible;
+    background: #00800045;
+}
+
+.textarea {
+    outline: none;
+    width: 100%;
+}
+
+.hiddenDiv {
+    opacity: 0;
+    position: absolute;
+    display: inline-block;
+}
+
+.nonEditableChild {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,15 @@
+[ignore]
+
+[include]
+
+[libs]
+./flow-typed
+
+[lints]
+
+[options]
+    
+[strict]
+unclear-type
+untyped-import
+untyped-type-import
